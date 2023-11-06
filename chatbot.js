@@ -1,18 +1,21 @@
-const OpenAIApi  = require('openai');
-require('dotenv').config();
+const OpenAIApi = require("openai");
+require("dotenv").config();
 const openai = new OpenAIApi({ key: process.env.OPENAI_API_KEY });
 
 const handleMessage = async (message) => {
   if (message.author.bot) return;
-  if (message.content.startsWith('!chat')) {
-    const userInput = message.content.slice(5);
-    let prompt = `
+  const userInput = message.content;
+  console.log(message);
+  // 0764969147646133>
+  let prompt = `
 Question: ${userInput}\n\ 
 lisbun:`;
-    const userQuery = prompt;
-    console.log("prompt: ", userQuery);
+  const userQuery = prompt;
+  console.log("userQuery value: "+userQuery);
+  console.log("userInput value: "+userInput);
+  console.log("prompt: ", userQuery);
 
-    try {
+  try {
       const completion = await openai.completions.create({
         model: "text-davinci-003",
         prompt: userQuery,
@@ -29,13 +32,17 @@ lisbun:`;
         const generatedText = completion.choices[0].text;
         return message.reply(generatedText);
       } else {
-        return message.reply("The response from the AI was unexpected. Please try again.");
+        return message.reply(
+          "The response from the AI was unexpected. Please try again."
+        );
       }
-    } catch (err) {
+    } 
+    catch (err) {
       console.error(err);
-      return message.reply("Sorry, something went wrong. I am unable to process your query.");
+      return message.reply(
+        "Sorry, something went wrong. I am unable to process your query."
+      );
     }
-  }
 };
 
 module.exports = { handleMessage };

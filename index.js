@@ -15,10 +15,17 @@ client.once('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on('messageCreate', (message) => {
-    chatbot.handleMessage(message);
-    console.log("message event");
+client.on('messageCreate', async (message) => {
+    try {
+        await message.fetch(); // Wait for the message to be fully loaded
+        console.log(`Received message: ${message.content}`);
+        chatbot.handleMessage(message);
+        console.log("message event");
+    } catch (error) {
+        console.error("Error fetching message:", error);
+    }
 });
+
 
 client.on("error", console.error);
 client.on("warn", console.warn);
