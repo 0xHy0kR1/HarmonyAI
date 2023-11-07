@@ -74,7 +74,7 @@ We can do so by visiting the [portal](https://discordapp.com/developers/applica
 ![bot1](https://github.com/0xHy0kR1/HarmonyAI/assets/90767483/fdb55e2a-855b-4c81-a241-46bcaddf3030)
 
 After that, we need to give our application a name and click the create button.
-![bot2](https://github.com/0xHy0kR1/HarmonyAI/assets/90767483/86a5605c-5911-4767-a020-4c2905cda035)
+![bot2](https://github.com/0xHy0kR1/HarmonyAI/assets/90767483/708d2403-ce8c-41c0-b55b-fee6868a69a6)
 
 After that, we need to select the bot tab and click on add bot.
 ![bot3](https://github.com/0xHy0kR1/HarmonyAI/assets/90767483/23fd8d06-05b5-4d9c-b490-80d90f41a7fd)
