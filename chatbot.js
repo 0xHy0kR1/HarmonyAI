@@ -5,15 +5,11 @@ const openai = new OpenAIApi({ key: process.env.OPENAI_API_KEY });
 const handleMessage = async (message) => {
   if (message.author.bot) return;
   const userInput = message.content;
-  console.log(message);
-  // 0764969147646133>
   let prompt = `
 Question: ${userInput}\n\ 
 lisbun:`;
   const userQuery = prompt;
-  console.log("userQuery value: "+userQuery);
   console.log("userInput value: "+userInput);
-  console.log("prompt: ", userQuery);
 
   try {
       const completion = await openai.completions.create({
@@ -26,7 +22,6 @@ lisbun:`;
         frequency_penalty: 0.5,
       });
 
-      console.log(completion);
 
       if (completion.choices && completion.choices.length > 0) {
         const generatedText = completion.choices[0].text;

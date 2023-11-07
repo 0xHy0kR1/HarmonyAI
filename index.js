@@ -1,7 +1,5 @@
 const { Client, GatewayIntentBits } = require("discord.js");
-const { Player, QueryType } = require("discord-player");
 const chatbot = require('./chatbot.js');
-const musicbot = require('./musicbot');
 
 const client = new Client({
     intents: [
@@ -18,9 +16,8 @@ client.once('ready', () => {
 client.on('messageCreate', async (message) => {
     try {
         await message.fetch(); // Wait for the message to be fully loaded
-        console.log(`Received message: ${message.content}`);
         chatbot.handleMessage(message);
-        console.log("message event");
+        // musicbot.handleCommands(message);
     } catch (error) {
         console.error("Error fetching message:", error);
     }
