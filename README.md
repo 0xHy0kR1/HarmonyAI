@@ -74,10 +74,10 @@ We can do so by visiting the [portal](https://discordapp.com/developers/applica
 ![bot1](https://github.com/0xHy0kR1/HarmonyAI/assets/90767483/fdb55e2a-855b-4c81-a241-46bcaddf3030)
 
 After that, we need to give our application a name and click the create button.
-![[bot2.webp]]
+![bot2](https://github.com/0xHy0kR1/HarmonyAI/assets/90767483/86a5605c-5911-4767-a020-4c2905cda035)
 
 After that, we need to select the bot tab and click on add bot.
-![[bot3.webp]]
+![bot3](https://github.com/0xHy0kR1/HarmonyAI/assets/90767483/23fd8d06-05b5-4d9c-b490-80d90f41a7fd)
 
 Now our bot is created and we can continue with inviting it to our server.
 
@@ -86,16 +86,16 @@ Now our bot is created and we can continue with inviting it to our server.
 After creating our bot we can invite it using the OAuth2 URL Generator.
 
 For that, we need to navigate to the OAuth2 page and select bot in the scope tap.
-![[bot4.png]]
+![bot4](https://github.com/0xHy0kR1/HarmonyAI/assets/90767483/27dd122e-ce84-40c7-b673-04ca4ed8d294)
 
 After that, we need to select the needed permissions to play music and read messages.
-![[bot5.png]]
+![bot5](https://github.com/0xHy0kR1/HarmonyAI/assets/90767483/d462e35a-64e2-4b31-b90d-566e2f905705)
 
 Then we can copy our generated URL and paste it into our browser.
-![[bot6.png]]
+![bot6](https://github.com/0xHy0kR1/HarmonyAI/assets/90767483/bc586750-36fa-4ffd-acfa-d691cc0bc59a)
 
 After pasting it, we add it to our server by selecting the server and clicking the authorize button.
-![[bot7.png]]
+![bot7](https://github.com/0xHy0kR1/HarmonyAI/assets/90767483/c23907f3-96fa-4f5f-94d3-0e014d4d14c6)
 
 # Building the GPT-3 Chatbot
 
@@ -375,3 +375,4 @@ module.exports = { handleMessage };
 Run the code using "node index" commad.
 
 #### Sample test of chatbot - 
+![test_result](https://github.com/0xHy0kR1/HarmonyAI/assets/90767483/8915a391-3fae-4371-97b5-017e28754808)
