@@ -71,7 +71,7 @@ The first step is setting up a Discord server for testing your bots. Even if you
 First, we need to create a new application on the discord development portal.
 
 We can do so by visiting the [portal](https://discordapp.com/developers/applications/?ref=gabrieltanner.org) and clicking on new application.
-![[bot1.webp]]
+![bot1](https://github.com/0xHy0kR1/HarmonyAI/assets/90767483/fdb55e2a-855b-4c81-a241-46bcaddf3030)
 
 After that, we need to give our application a name and click the create button.
 ![[bot2.webp]]
